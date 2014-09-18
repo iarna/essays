@@ -53,3 +53,14 @@ We intend to make a number of user visible improvements:
 [#5827]: https://github.com/npm/npm/issues/5827
 [#5984]: https://github.com/npm/npm/issues/5984
 
+So when will you get to see this? I don't have a timeline yet-- I'm still in
+the part of the project where everything I look at fractically expands into
+yet more work. But that said, you can follow along with progress on what will
+be its pull request:
+
+https://github.com/npm/npm/pull/6191
+
+If you're interested in that level of detail, you may also be interested in
+reading @izs's and @othiym23's thoughts here:
+
+https://github.com/npm/npm/issues/5919
