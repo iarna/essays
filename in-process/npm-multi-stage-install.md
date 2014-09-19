@@ -27,14 +27,14 @@ So this makes our lives better maintaining npm, but what does it do for you?
 We intend to make a number of user visible improvements:
 
 * Progress bars! [#1257], [#5340]
-* Automatic/intrinsic dedup, across all module source types [#4761] [#5827]
+* Automatic/intrinsic dedup, across all module source types [#4761], [#5827]
 * Errors if we can't find compatible versions MUCH earlier, before any changes
   to your node_modules folder have happened [#5107]
 * Better diagnostics when peerDependencies produce impossible to resolve scenarios.
 * Better use of bundledDependencies
 * Recursively resolving missing dependencies [#1341]
 * Better shrinkwrap [#2649]
-* Fixes to icky edge cases [#3124] [#5698] [#5655] [#5400]
+* Fixes some icky edge cases [#3124], [#5698], [#5655], [#5400]
 * Better shrinkwrap support, including updating of shrinkwrap file when you use
   --save on your installs and uninstalls [#5448], [#5779]
 * Closer to transactional installs [#5984]
