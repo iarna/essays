@@ -17,11 +17,11 @@ This does two things: First it gives us knowledge of the dependency tree and
 what we need to do prior to doing anything that will need to touch your
 node_modules folder.  This means we can give simple errors, earlier, much
 improving the experience of this failure case.  Further, deduping and
-recursive dependency resolution fall easily out of this.  Second, by breaking
-down the actual act of installing new modules into functional pieces, we
-eliminate the opportunity for many of the race conditions that have plagued
-us recently. As a bonus, this also makes making meaningful progress bars a 
-LOT easier.
+recursive dependency resolution are then easy to include.  Second, by
+breaking down the actual act of installing new modules into functional
+pieces, we eliminate the opportunity for many of the race conditions that
+have plagued us recently.  As a bonus, this also makes making meaningful
+progress bars a LOT easier.
 
 So this makes our lives better maintaining npm, but what does it do for you? 
 We intend to make a number of user visible improvements:
@@ -54,7 +54,7 @@ We intend to make a number of user visible improvements:
 [#5984]: https://github.com/npm/npm/issues/5984
 
 So when will you get to see this? I don't have a timeline yet-- I'm still in
-the part of the project where everything I look at fractically expands into
+the part of the project where everything I look at fractally expands into
 yet more work. But that said, you can follow along with progress on what will
 be its pull request:
 
