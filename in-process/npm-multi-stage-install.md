@@ -1,13 +1,15 @@
 Hi everyone! I'm the new programmer at npm working on the cli. I'm really
 excited that my first major project is going to be a substantial refactor to
 how npm handles dependency trees.  We've been calling this thing
-[multi-stage install] but really it covers more than just installs.  It will
-touch and improve all of all actions npm takes relating to dependencies and
-mutating your node_modules folder.  This affects install, uninstall, dedup,
-shrinkwrap and, obviously, dependencies (including optionalDependencies,
-peerDependencies, bundledDependencies and devDependencies).
+[multi-stage install] but really it covers more than just installs.
 
 [multi-stage install]: https://github.com/npm/npm/milestones/multi-stage%20install
+
+Multi-stage installs will touch and improve all of all actions npm takes
+relating to dependencies and mutating your node_modules folder.  This
+affects install, uninstall, dedup, shrinkwrap and, obviously, dependencies
+(including optionalDependencies, peerDependencies, bundledDependencies and
+devDependencies).
 
 The idea is simple enough: We'll build an in memory model of how we want the
 node_modules folders to look.  Compare that model to what's on disk,
