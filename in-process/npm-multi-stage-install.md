@@ -7,9 +7,20 @@ how npm handles dependency trees.  We've been calling this thing
 
 Multi-stage installs will touch and improve all of the actions npm takes
 relating to dependencies and mutating your node_modules directory.  This
-affects install, uninstall, dedupe, shrinkwrap and, obviously, dependencies
-(including optionalDependencies, peerDependencies, bundledDependencies and
-devDependencies).
+affects [install], [uninstall], [dedupe], [shrinkwrap] and, obviously,
+[dependencies] (including [optionalDependencies], [peerDependencies],
+[bundledDependencies] and [devDependencies]).
+
+[dependencies]: https://www.npmjs.org/doc/files/package.json.html#dependencies
+[optionalDependencies]: https://www.npmjs.org/doc/files/package.json.html#optionaldependencies
+[peerDependencies]: https://www.npmjs.org/doc/files/package.json.html#peerdependencies
+[devDependencies]: https://www.npmjs.org/doc/files/package.json.html#devdependencies
+[bundledDependencies]: https://www.npmjs.org/doc/files/package.json.html#bundleddependencies
+
+[install]: https://www.npmjs.org/doc/cli/npm-install.html
+[uninstall]: https://www.npmjs.org/doc/cli/npm-uninstall.html
+[dedupe]: https://www.npmjs.org/doc/cli/npm-dedupe.html
+[shrinkwrap]: https://www.npmjs.org/doc/cli/npm-shrinkwrap.html
 
 The idea is simple enough: Build an in-memory model of how we want the
 node_modules directories to look.  Compare that model to what's on disk,
@@ -65,12 +76,11 @@ are:
 
 So when will you get to see this? I don't have a timeline yet– I'm still in
 the part of the project where everything I look at fractally expands into
-yet more work.  You can follow along with progress on what will be its pull
-request:
-
-https://github.com/npm/npm/pull/6191
+yet more work.  You can follow along with progress on what will be its [pull
+request](https://github.com/npm/npm/pull/6191)
 
 If you're interested in that level of detail, you may also be interested in
-reading @izs's and @othiym23's thoughts here:
+reading [@izs]'s and [@othiym23]'s [thoughts](https://github.com/npm/npm/issues/5919).
 
-https://github.com/npm/npm/issues/5919
+[@izs]: https://twitter.com/izs
+[@othiym23]: https://twitter.com/othiym23
