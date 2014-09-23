@@ -1,13 +1,13 @@
-Hi everyone! I'm the new programmer at npm working on the cli. I'm really
+Hi everyone! I'm the new programmer at npm working on the CLI. I'm really
 excited that my first major project is going to be a substantial refactor to
 how npm handles dependency trees.  We've been calling this thing
 [multi-stage install] but really it covers more than just installs.
 
 [multi-stage install]: https://github.com/npm/npm/milestones/multi-stage%20install
 
-Multi-stage installs will touch and improve all of all actions npm takes
-relating to dependencies and mutating your node_modules folder.  This
-affects install, uninstall, dedup, shrinkwrap and, obviously, dependencies
+Multi-stage installs will touch and improve all of the actions npm takes
+relating to dependencies and mutating your node_modules directory.  This
+affects install, uninstall, dedupe, shrinkwrap and, obviously, dependencies
 (including optionalDependencies, peerDependencies, bundledDependencies and
 devDependencies).
 
@@ -17,22 +17,22 @@ producing a list of steps to change the disk version into the memory model.
 Finally, we execute the steps in the list.
 
 The refactor gives several needed improvements: It gives us knowledge of the
-dependency tree and what we need to do prior to doing anything that will
-need to touch your node_modules folder.  This means we can give simple
-errors, earlier, much improving the experience of this failure case.
-Further, deduping and recursive dependency resolution are then easy to
-include.  And by breaking down the actual act of installing new modules into
-functional pieces, we eliminate the opportunity for many of the race
-conditions that have plagued us recently.
+dependency tree and what we need to do prior to touching your node_modules
+directory.  This means we can give simple errors, earlier, much improving
+the experience of this failure case.  Further, deduping and recursive
+dependency resolution are then easy to include.  And by breaking down the
+actual act of installing new modules into functional pieces, we eliminate
+the opportunity for many of the race conditions that have plagued us
+recently.
 
-But wait, there's more! The refactor will make implementing a number of oft
-requested features a lot easier– some of the issues we intend to address
+But wait, there's more! The refactor will make implementing a number of
+oft-requested features a lot easier– some of the issues we intend to address
 are:
 
 * Progress bars! [#1257], [#5340]
-* Automatic/intrinsic dedup, across all module source types [#4761], [#5827]
+* Automatic/intrinsic dedupe, across all module source types [#4761], [#5827]
 * Errors if we can't find compatible versions MUCH earlier, before any changes
-  to your node_modules folder have happened [#5107]
+  to your node_modules directory have happened [#5107]
 * Better diagnostics when peerDependencies produce impossible to resolve scenarios.
 * Better use of bundledDependencies
 * Recursively resolving missing dependencies [#1341]
