@@ -11,8 +11,8 @@ affects install, uninstall, dedupe, shrinkwrap and, obviously, dependencies
 (including optionalDependencies, peerDependencies, bundledDependencies and
 devDependencies).
 
-The idea is simple enough: We'll build an in memory model of how we want the
-node_modules folders to look.  Compare that model to what's on disk,
+The idea is simple enough: Build an in-memory model of how we want the
+node_modules directories to look.  Compare that model to what's on disk,
 producing a list of steps to change the disk version into the memory model.
 Finally, we execute the steps in the list.
 
