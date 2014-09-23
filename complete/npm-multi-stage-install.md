@@ -57,7 +57,7 @@ are:
 * Better shrinkwrap [#2649]
 * Fixes some icky edge cases [#3124], [#5698], [#5655], [#5400]
 * Better shrinkwrap support, including updating of shrinkwrap file when you use
-  –save on your installs and uninstalls [#5448], [#5779]
+  --save on your installs and uninstalls [#5448], [#5779]
 * Closer to transactional installs [#5984]
 
 [#1257]: https://github.com/npm/npm/issues/1257
