@@ -25,6 +25,13 @@ actual act of installing new modules into functional pieces, we eliminate
 the opportunity for many of the race conditions that have plagued us
 recently.
 
+Breaking changes: The refactor will likely result in a new major version as
+we will almost certainly be tweaking [lifecycle script] behavior.  At the very
+least, we'll be running each lifecycle step as its own stage in the multi-stage
+install.
+
+[lifecycle script]: https://www.npmjs.org/doc/misc/npm-scripts.html
+
 But wait, there's more! The refactor will make implementing a number of
 oft-requested features a lot easier– some of the issues we intend to address
 are:
